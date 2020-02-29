@@ -1,5 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab2"></ion-back-button>
+    </ion-buttons>
     <ion-title>
       Tab 1
     </ion-title>
@@ -12,6 +15,23 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>
+        <ion-img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"></ion-img>
+      </h1>
+    </ion-slide>
+  </ion-slides>
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
